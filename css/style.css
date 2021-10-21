@@ -1,13 +1,14 @@
 body {
   font-family: 'Alegreya Sans SC', serif; 
   background-image: url("../images/concrete_seamless.png");
-  background-color: #b99f9f; 
+  background-color: #f1f1f1; 
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: static; 
 }
 
 .top-header {
@@ -21,8 +22,6 @@ a:link, a:visited {
 .nav_links {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
 }
 
 .card{
@@ -96,6 +95,12 @@ a:link, a:visited {
 }
 
 @media print {
+
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
   body {
     background-image: none;
     background-color: #ffffff; 
